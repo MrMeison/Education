@@ -35,7 +35,8 @@ gulp.task("clean", () => {
 
 gulp.task("assets", () => {
     return gulp.src(input.assets)
-        .pipe(gulp.dest(output));
+        .pipe(gulp.dest(output))
+        .pipe(bs.stream());
 });
 
 gulp.task("lint", () => {
@@ -50,9 +51,11 @@ gulp.task("lint", () => {
 
 gulp.task("server", () => {
     bs.init({
-        server: output,
+        server: {
+            baseDir:output
+        },
         open: false,
-        browser: "browser",
+        browser: "chrome",
         reloadOnRestart: true,
         notify: false
     });
