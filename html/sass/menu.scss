@@ -1,0 +1,46 @@
+@import "variables";
+
+.top-navigation {
+  display: flex;
+  flex-grow: 1;
+}
+
+.top-menu {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.menu-item {
+  padding: 0 12px 20px 0;
+  a {
+    color: $flax_color;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 22px;
+    padding: 7px 10px;
+    &:hover,
+    &:focus {
+      color: $flax_color;
+      background: linear-gradient(#171717, #1a1a1a);
+      border-radius: 5px;
+      text-decoration: none;
+    }
+  }
+}
+
+.dropdown-menu {
+  list-style: none;
+  position: absolute;
+  display: none;
+}
+
+.dropdown-item::after {
+  width: 16px;
+  height: 16px;
+  background: url(#{$drop_arrow_img}) no-repeat right 9px center,
+  linear-gradient(#171717, #1a1a1a);
+  border-radius: 5px;
+}

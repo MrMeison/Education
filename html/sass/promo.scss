@@ -1,0 +1,19 @@
+@import "variables";
+
+.promo__header {
+  color: $flax_color;
+  font-family: "Georgia", sans-serif;
+  font-style: italic;
+  font-size: 26px;
+  line-height: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.promo__content {
+  color: #6b96a8;
+  font-size: 18px;
+  line-height: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}

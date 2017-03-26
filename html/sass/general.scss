@@ -1,0 +1,57 @@
+@import "variables";
+
+.main-line {
+  background-color: #e6e3da;
+  height: 8px;
+}
+
+.container {
+  margin: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.button--circle {
+  border-radius: 15px;
+  width: 25px;
+  height: 25px;
+  box-shadow: 0 0 0px 4px rgba(115, 115, 115, 0.38);
+  border-style: none;
+}
+
+.button--yellow {
+  border-radius: 50px;
+  color: #252525;
+  font: italic 12px/20px "georgia";
+  margin-right: 4px;
+  padding: 9px 25px;
+  text-decoration: none;
+  background-image: linear-gradient(to top, #e1c049, #ccba3a);
+  border-style: none;
+  &:active {
+    background-image: linear-gradient(to top, #e1c049, #faa51a);
+  }
+}
+
+.information__title {
+  color: $flax_color;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+}

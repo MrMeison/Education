@@ -1,0 +1,30 @@
+@import "variables";
+
+.ads-block {
+  background-color: #f6f4ef;
+  padding-bottom: 55px;
+}
+
+.ads-block__wrapper {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to bottom, #f5f5f5, #e6e6e6);
+  border: 1px solid #d1cec5;
+  border-radius: 5px;
+  padding: 20px 25px;
+}
+
+.ads-block__header {
+  color: #444444;
+  font-style: italic;
+  line-height: 20px;
+  margin: 0;
+  padding-bottom: 5px;
+  text-align: left;
+}
+
+.ads-block__description {
+  color: #444444;
+  font-size: 12px;
+  line-height: 20px;
+}

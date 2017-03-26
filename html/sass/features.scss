@@ -1,0 +1,63 @@
+@import "variables";
+
+.features {
+  background-color: black;
+  background-image: url(#{$popup_wrapper_img});
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    background-image: url(#{$btm_dark_popup_img});
+    background-size: 16px;
+    width: 100%;
+    height: 20px;
+  }
+}
+
+.features__wrapper {
+  display: flex;
+}
+
+.feature-list {
+  flex-basis: 66.6%;
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.feature__item {
+  display: flex;
+  flex-basis: 45%;
+  margin-right: 5%;
+  margin-bottom: 5%;
+}
+
+.feature__image {
+  position: relative;
+  flex-grow: 0;
+  padding-right: 1em;
+}
+
+.feature__image img {
+  box-shadow: 0 0 3px 3px black;
+}
+
+.feature__action {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
+
+.feature__title {
+  margin-bottom: 0.25em;
+  color: $flax_color;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+}
+
+.feature__description {
+  color: #979797;
+  font-size: 12px;
+  line-height: 17px
+}

@@ -1,0 +1,43 @@
+@import "variables";
+
+.header {
+  background: radial-gradient(#232a33 15%, transparent 16%) 0 0, radial-gradient(#272e38 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, 0.1) 15%, transparent 20%) 8px 9px;
+  background-color: #242a34;
+  background-size: 16px 16px;
+  border-top: 1px solid #343d4b;
+  padding-top: 45px;
+}
+
+.top-header {
+  display: flex;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  a {
+    text-decoration: none;
+    &:hover,
+    &:visited,
+    &:focus {
+      color: $flax_color;
+    }
+  }
+  h1 {
+    letter-spacing: -2px;
+  }
+}
+
+.slogan::before {
+  content: "|";
+  display: inline-block;
+  padding-right: 5px;
+}
+
+.slogan {
+  color: #7a7c81;
+  float: left;
+  font: italic 11px/52px "georgia";
+  padding-left: 1em;
+}

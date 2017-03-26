@@ -1,0 +1,51 @@
+@import "variables";
+
+.articles {
+  background-color: #f6f4ef;
+}
+
+.articles__wrapper {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 45px;
+}
+
+.article {
+  flex-basis: 33%;
+}
+
+.article__header {
+  color: #333;
+  padding-bottom: 25px;
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 15px;
+}
+
+.article__body {
+  color: #444;
+  padding-bottom: 25px;
+}
+
+.image-caption {
+  background-color: #eeebe4;
+  border-radius: 5px;
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #e5e2d9;
+  color: #888888;
+  font: italic 11px/20px "Georgia";
+  margin-bottom: 25px;
+  padding: 5px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.content__image {
+  position: relative;
+}
+
+.content__action {
+  position: absolute;
+  top: -5px;
+  right: 5px;
+}
