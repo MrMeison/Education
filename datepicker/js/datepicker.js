@@ -150,6 +150,9 @@
                 }
                 button.classList.add("datepicker__date--selected");
             }
+            else {
+                event.preventDefault();
+            }
         }
     }
 })(document, window);

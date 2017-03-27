@@ -3,7 +3,7 @@
     background-color: white;
     position: absolute;
     z-index: 10;
-    width: 210px;
+    width: 220px;
     border-spacing: 3px;
     border: 1px solid lightgray;
     box-shadow: 0 0 2px 3px lightgray;
@@ -28,6 +28,10 @@
     background-color: transparent;
     border-radius: 5px;
     border-style: none;
+}
+
+.datepicker__date:hover {
+    background-color: lightgray;
 }
 
 .datepicker__date--selected {
