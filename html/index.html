@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Redux</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="top-header">
+                <div class="logo">
+                    <h1><a href="/">Redux</a></h1>
+                    <span class="slogan">Super-Dooper Business</span>
+                </div>
+                <nav class="top-navigation">
+                    <ul class="top-menu">
+                        <li class="menu-item"><a href="">Features</a></li>
+                        <li class="menu-item dropdown-item">
+                            <a href="">Templates</a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li class="menu-item">
+                                    <a href="#">Meet the team</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Pricing table</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Gallery Page</a>
+                                </li>
+                                <li class="menu-item dropdown-item dropdown-item--second">
+                                    <a role="button" aria-expanded="false" href="#">Portfolio 3 Column</a>
+                                    <ul class="dropdown-menu dropdown-menu--second" role="menu">
+                                        <li class="menu-item">
+                                            <a href="#">Meet the team</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Pricing table</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Gallery Page</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Portfolio 3 Column</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Portfolio 4 Column</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Full width</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Archives</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Contact form</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">Portfolio 4 Column</a>
+                                </li>
+                                <li class="menu-item dropdown-item">
+                                    <a role="button" aria-expanded="false" href="#">Full width</a>
+                                    <ul class="dropdown-menu dropdown-menu--second" role="menu">
+                                        <li class="menu-item">
+                                            <a href="#">Meet the team</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Pricing table</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Gallery Page</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Portfolio 3 Column</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Portfolio 4 Column</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Full width</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Archives</a>
+                                        </li>
+                                        <li class="menu-item">
+                                            <a href="#">Contact form</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">Archives</a>
+                                </li>
+                                <li class="last">
+                                    <a href="#">Contact form</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-item"><a href="">Shartcodes</a></li>
+                        <li class="menu-item"><a href="">Portfolio</a></li>
+                        <li class="menu-item"><a href="">Blog</a></li>
+                        <li class="menu-item"><a href="">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="promo">
+                <h2 class="promo__header">The Theme You’ve Been Waiting For. Seriously.</h2>
+                <p class="promo__content">
+                    A beautiful, unique, powerful, WordPress theme that oooozes quality, is jammed-packed with features, is ripe for customisation
+                    and better yet, kind to your wallet - sounds almost too good to be true!
+                </p>
+                <ul class="slider">
+                    <li>
+                        <img src="img/first_slide.png" width="414" height="401" alt="picture" />
+                    </li>
+
+                    <li>
+                        <img src="img/second_slide.png" width="460" height="434" alt="picture" />
+                    </li>
+
+                    <li>
+                        <img src="img/third_slide.png" width="414" height="401" alt="picture" />
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="light-line"></div>
+    </header>
+    <main>
+        <section class="features">
+            <div class="container">
+                <div class="features__wrapper">
+                    <ul class="feature-list">
+                        <li class="feature__item">
+                            <div class="feature__image">
+                                <button class="feature__action button--circle">+</button>
+                                <img src="img/square_gray.png" alt="">
+                            </div>
+                            <div class="feature__content">
+                                <h2 class="feature__title">Pixel perfect design</h2>
+                                <p class="feature__description">Gorgeous design with time and attention dedicated to each and e</p>
+                            </div>
+                        </li>
+                        <li class="feature__item">
+                            <div class="feature__image">
+                                <button class="feature__action button--circle">+</button>
+                                <img src="img/square_gray.png" alt="" />
+                            </div>
+                            <div class="feature__content">
+                                <h2 class="feature__title">Pixel perfect design</h2>
+                                <p class="feature__description">Gorgeous design with time and attention dedicated to each and e</p>
+                            </div>
+                        </li>
+                        <li class="feature__item">
+                            <div class="feature__image">
+                                <button class="feature__action button--circle">+</button>
+                                <img src="img/square_gray.png" alt="" />
+                            </div>
+                            <div class="feature__content">
+                                <h2 class="feature__title">Pixel perfect design</h2>
+                                <p class="feature__description">Gorgeous design with time and attention dedicated to each and e</p>
+                            </div>
+                        </li>
+                        <li class="feature__item">
+                            <div class="feature__image">
+                                <button class="feature__action button--circle">+</button>
+                                <img src="img/square_gray.png" alt="" />
+                            </div>
+                            <div class="feature__content">
+                                <h2 class="feature__title">Pixel perfect design</h2>
+                                <p class="feature__description">Gorgeous design with time and attention dedicated to each and e</p>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="information-block">
+                        <h2 class="information__title">Pixel perfect design</h2>
+                        <p class="information__content">
+                            Gorgeous design with time and attention dedicated to every pixe
+                        </p>
+                        <button class="button--yellow">Feature Tour</button>
+                        <button class="button--yellow">Purchase Now!</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="articles">
+            <div class="main-line"></div>
+            <div class="container articles__wrapper">
+                <div class="article">
+                    <header>
+                        <h2 class="article__header">
+                            Endlessly configurable content.
+                        </h2>
+                    </header>
+                    <article class="article__body">
+                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.
+                            Aenean lacinia bibendum nulla sed consectetur. Cras mattis consectetur purus sit amet fermentum.</p>
+                        <p>Donec id elit non mi porta gravida at eget metus. Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit. Vestibulum id ligula porta felis euismod semper. </p>
+                    </article>
+                </div>
+                <div class="article">
+                    <header>
+                        <h2 class="article__header">
+                            The right blend of widgets and options.
+                        </h2>
+                    </header>
+                    <article class="article__body">
+                        <figure class="content__image">
+                            <img src="img/opiton_img.png" alt="">
+                            <figcaption class="image-caption">Only options that are needed, none of the bloat.</figcaption>
+                            <button class="content__action button--circle">+</button>
+                        </figure>
+                        <figure class="content__image">
+                            <img src="img/widgets_bg.png" alt="">
+                            <figcaption class="image-caption">12 extra helpings of widgety goodness. Mmmm.</figcaption>
+                            <button class="content__action button--circle">+</button>
+                        </figure>
+                    </article>
+                </div>
+                <div class="article">
+                    <header>
+                        <h2 class="article__header">
+                            Take a look behind the scenes.
+                        </h2>
+                    </header>
+                    <article class="article__body">
+                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        <figure class="content__image">
+                            <img src="img/redux-logo.png" alt="">
+                            <figcaption class="image-caption">Overview of options and widgets - 2 mins 33 secs.</figcaption>
+                            <button class="content__action button--circle">+</button>
+                        </figure>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <section class="ads-block">
+            <div class="container ads-block__wrapper">
+                <div class="ads-block_content">
+                    <h3 class="ads-block__header">
+                        Join the cool kids and get your copy of Redux now....
+                    </h3>
+                    <p class="ads-block__description">Redux is avalaible for the ridiculously low, one-time cost of $37! That’s right, I’m practically giving
+                        it away!
+                    </p>
+                </div>
+                <button class="button--yellow">Yes, I want this theme now!</button>
+            </div>
+        </section>
+        <section class="activities">
+            <div class="container activities__wrapper">
+                <div class="activities__column activities__recently-posts">
+                    <div class="activities__post">
+                        <img src="img/square_black.png" alt="">
+                        <div class="activities__post-content">
+                            <h2 class="activities__post-header">Ramblings from the Redux Blog.</h2>
+                            <p class="activities__post-description">
+                                Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id
+                            </p>
+                            <span class="activities__post-meta">
+                                <time class="activities__post-date">November 7 2010</time>, <a class="activities__post-comments" href="/">2 comments</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="activities__post">
+                        <img src="img/square_black.png" alt="">
+                        <div class="activities__post-content">
+                            <h2 class="activities__post-header">Ramblings from the Redux Blog.</h2>
+                            <p class="activities__post-description">
+                                Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id
+                            </p>
+                            <span class="activities__post-meta">
+                                <time class="activities__post-date">November 7 2010</time>, <a class="activities__post-comments" href="/">2 comments</a>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="activities__post">
+                        <img src="img/square_black.png" alt="">
+                        <div class="activities__post-content">
+                            <h2 class="activities__post-header">Ramblings from the Redux Blog.</h2>
+                            <p class="activities__post-description">
+                                Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id
+                            </p>
+                            <span class="activities__post-meta">
+                                <time class="activities__post-date">November 7 2010</time>, <a class="activities__post-comments" href="/">2 comments</a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="activities__column activities__last-comments">
+                    <h2 class="activities__comments-header">Musings in 140 characters or less.</h2>
+                    <div class="activities__comment">
+                        <p class="activities__comment-body">
+                            <a class="activities__comment-link" href="/">@JamesBliss</a> Hard to get get a balance for those
+                            that know their way around WP/HTML/CSS and those that don't I find
+                            <time class="activities__comment-date">33 minutes ago</time>
+                        </p>
+                    </div>
+                    <div class="activities__comment">
+                        <p class="activities__comment-body">
+                            <a class="activities__comment-link" href="/">@JamesBliss</a> Hard to get get a balance for those
+                            that know their way around WP/HTML/CSS and those that don't I find
+                            <time class="activities__comment-date">33 minutes ago</time>
+                        </p>
+                    </div>
+                    <div class="activities__comment">
+                        <p class="activities__comment-body">
+                            <a class="activities__comment-link" href="/">@JamesBliss</a> Hard to get get a balance for those
+                            that know their way around WP/HTML/CSS and those that don't I find
+                            <time class="activities__comment-date">33 minutes ago</time>
+                        </p>
+                    </div>
+                    <div class="activities__comment">
+                        <p class="activities__comment-body">
+                            <a class="activities__comment-link" href="/">@JamesBliss</a> Hard to get get a balance for those
+                            that know their way around WP/HTML/CSS and those that don't I find
+                            <time class="activities__comment-date">33 minutes ago</time>
+                        </p>
+                    </div>
+                </div>
+                <div class="activities__column activities__reviews">
+                    <h2 class="activities__reviews-header">What customers are sayin’.</h2>
+                    <div class="review__item">
+                        <div class="review__author">
+                            <img src="img/square_black.png" alt="Avatar" class="review__avatar" />
+                            <div class="review__name">Steven Bluck</div>
+                            <div class="review__position">Technical Director Audi International</div>
+                            <div class="review__company">Audi.com</div>
+                        </div>
+                        <p class="review__content">“Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet...”
+                        </p>
+                    </div>
+                    <div class="review__item">
+                        <div class="review__author">
+                            <img src="img/square_black.png" alt="Avatar" class="review__avatar" />
+                            <div class="review__name">Steven Bluck</div>
+                            <div class="review__position">Technical Director Audi International</div>
+                            <div class="review__company">Audi.com</div>
+                        </div>
+                        <p class="review__content">“Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies
+                            vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere velit aliquet...”
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="main-line"></div>
+    </main>
+    <footer class="footer">
+
+        <div class="top-footer">
+            <div class="container top-footer__wrapper">
+                <div class="footer__column">
+                    <div class="top-footer__content">
+                        <h2>If you’re using Redux then we want to hear from you!</h2>
+                        <div class="">
+                            Sed ornare dictum mi, sed rutrum metus condimentum sodales. Fusce quis tellus mollis sapien porta placerat. In dapibus velit
+                            eget felis rutrum posuere. Pellentesque tincidunt augue vitae diam auctor id fermentum ante elementum.
+                            estibulum in luctus urna. Vivamus euismod, ligula eu commodo accumsan.
+                        </div>
+                    </div>
+                    <div class="top-footer__contact">
+                        <span class="top-footer__email">Email: hello@redux.com</span><span class="top-footer__tel">Tel: 1-408-996-1010</span>
+                    </div>
+                </div>
+                <div class="top-footer__column subcribe-block">
+                    <h2 class="subcribe-block__header">
+                        Subscribe and get the inside scoop.
+                    </h2>
+                    <p class="subcribe-block__content">
+                        Subscribe to our newsletter and get exclusive deals you wont find anywhere else straight to your inbox!
+                    </p>
+                    <form class="subcribe-block__form" action="">
+                        <input id="subscribe-block__input" class="subscribe-block__input" placeholder="enter your email address" type="text" />
+                        <button type="button">subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <div class="footer__bottom-wrapper">
+                    <div class="copyright">
+                        Copyright 2010 <a href="/">Redux Theme</a>. All Rights Reserved.
+                    </div>
+                    <div class="poweredby">
+                        Powered by <a href="/">WordPress</a>. <a href="/">Redux Theme</a> by <a href="/">Orman</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
