@@ -64,14 +64,15 @@
         }
 
         bindEvents() {
-            this.leftArrow.addEventListener("click", () => {
-                this.changeMonth(-1)
-            });
-            this.rightArrow.addEventListener("click", () => {
-                this.changeMonth(1)
-            });
+            this.leftArrow.addEventListener("mousedown", (event) => {
+                this.changeMonth(-1);
+                event.preventDefault();
+            }, true);
+            this.rightArrow.addEventListener("mousedown", (event) => {
+                this.changeMonth(1);
+                event.preventDefault();
+            }, true);
             this.input.addEventListener("focus", this.showPicker.bind(this));
-            // this.input.addEventListener("blur", this.hidePicker.bind(this));
         }
 
         changeMonth(monthIncrement) {
@@ -81,10 +82,16 @@
 
         showPicker() {
             this.picker.classList.add("datepicker--show");
+            this.input.addEventListener("blur", this.onInputBlur.bind(this));
         }
 
+        onInputBlur() {
+            this.hidePicker();
+            this.currentViewMonth = new Date(this.selectedDate.getFullYear(), this.selectedDate.getMonth(), 1);
+            this.renderCalendar(this.calendar, this.currentViewMonth.getFullYear(), this.currentViewMonth.getMonth());
+        }
         hidePicker() {
-            // this.picker.classList.remove("datepicker--show");
+            this.picker.classList.remove("datepicker--show");
         }
 
         renderCalendar(element, year, month) {
@@ -120,7 +127,7 @@
             }
 
             element.innerHTML = calendar;
-            element.addEventListener("click", this.onSelectDate.bind(this));
+            element.addEventListener("mousedown", this.onSelectDate.bind(this), true);
         }
 
         getDay(date) {
