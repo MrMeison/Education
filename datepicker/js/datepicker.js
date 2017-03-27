@@ -19,6 +19,7 @@
                 "July", "August", "September", "October", "November", "December"
             ];
             this.input = input;
+            this.input.readOnly = true;
             this.selectedDate = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
             this.currentViewMonth = new Date(new Date().getFullYear(), new Date().getMonth(), 1);
             this.picker = null;
