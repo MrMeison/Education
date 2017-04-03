@@ -1,5 +1,8 @@
 .datepicker {
     display: none;
+    background-color: white;
+    position: absolute;
+    z-index: 10;
     width: 210px;
     border-spacing: 3px;
     border: 1px solid lightgray;
