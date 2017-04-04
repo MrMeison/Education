@@ -1,5 +1,49 @@
 .translator {
+    display: none;
     position: absolute;
     background-color: #ffffff;
-    
+    left: 0;
+    top: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 5px rgba(211, 211, 211, 0.7);
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.translator__image {
+    width: 246px;
+    height: 160px;
+    border-radius: 5px 5px 0 0;
+    position: relative;
+}
+
+.translator__image:before {
+  content: 'Picture not avalible';
+  display: block;
+  position: absolute;
+  width: 246px;
+  height: 160px;
+}
+
+.translator__title {
+    color: #cccccc;
+    font-weight: normal;
+    margin: 0;
+    padding: 5px 0 0 15px;
+}
+
+.translator__meaning-list {
+    list-style: none;
+    margin: 0;
+    padding: 10px 5px 10px 15px;
+}
+
+.translator__meaning {
+    cursor: pointer;
+    padding-bottom: 0.5em;
+}
+
+.translator__meaning--selected {
+    font-size: 1.25em;
+    font-weight: bold;
 }
